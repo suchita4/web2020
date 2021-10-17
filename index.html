@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Html CRUD with Pure JavaScript
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label> Name*</label><label class="validation-error hide" id="NameValidationError">This field is required.</label>
+                        <input type="text" name="Name" id="fullName">
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div>
+                        <label>Phone No</label>
+                        <input type="text" name="Phone no" id="Phone no">
+                    </div>
+                    <div>
+                        <label>Age</label>
+                        <input type="text" name="age" id="age">
+                    </div>
+                    <div>
+                        <label>Gender</label>
+                        <input type="radio" name="m" id="Gender"  value="Male">&nbsp;Male&nbsp;
+                        <input type="radio" name="f" id="Gender" value="Female">&nbsp;Female&nbsp;
+                        <input type="radio" name="o" id="Other" value="Other">&nbsp;Other
+                    </div>
+                    <div>
+                        <label>Photo</label>
+                        <img src="" alt=""  name="Photo" id="Photo" width="100px" height="100px" vspace="" hspace="">
+                    </div>
+                    <div>
+                        <label>Address</label>
+                        <input type="text" name="address" id="address">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="List">
+                    <thead>
+                        <tr>
+                            <th> Name</th>
+                            <th>Email</th>
+                            <th>Phone No</th>
+                            <th>Age</th>
+                            <th>Gender</th>
+                            <th>Photo</th>
+                            <th>Address</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html> 
